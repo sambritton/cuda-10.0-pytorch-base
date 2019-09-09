@@ -11,6 +11,8 @@ RUN apt-get install -y unrar
 RUN apt-get install -y ffmpeg
 RUN apt-get install -y gnuplot-x11
 RUN apt-get install -y vim
+RUN pip install pandas
+RUN pip install scipy
 RUN # Clean up
 RUN apt-get -y autoremove
 RUN rm -rvf /var/lib/apt/lists/*

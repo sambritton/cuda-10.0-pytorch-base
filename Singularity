@@ -16,6 +16,8 @@ From: pytorch/pytorch
     apt-get install -y gnuplot-x11
 	
 	apt-get install -y vim
+	pip install pandas
+	pip install scipy
     
 	# Clean up
     apt-get -y autoremove
