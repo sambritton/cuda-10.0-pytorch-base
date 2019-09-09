@@ -1,5 +1,5 @@
 Bootstrap: docker
-From: pytorch/nightly-devel-cuda10.0-cudnn7
+From: pytorch/nightly-runtime-cuda10.0-cudnn7
 
 %post
 

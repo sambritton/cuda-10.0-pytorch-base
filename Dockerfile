@@ -1,5 +1,5 @@
-FROM pytorch/nightly-devel-cuda10.0-cudnn7
-FROM pytorch/nightly-devel-cuda10.0-cudnn7
+FROM pytorch/nightly-runtime-cuda10.0-cudnn7
+FROM pytorch/nightly-runtime-cuda10.0-cudnn7
 RUN # Update list of available packages, then upgrade them
 RUN apt-get update
 RUN DEBIAN_FRONTEND=noninteractive apt-get -y upgrade
