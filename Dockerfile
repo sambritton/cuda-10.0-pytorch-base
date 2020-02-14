@@ -1,4 +1,4 @@
-FROM pytorch/conda-cuda
+FROM pytorch/pytorch:1.4-cuda10.1-cudnn7-devel
 RUN # Update list of available packages, then upgrade them
 RUN apt-get update
 RUN DEBIAN_FRONTEND=noninteractive apt-get -y upgrade

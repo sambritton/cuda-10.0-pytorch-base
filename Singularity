@@ -1,5 +1,5 @@
 Bootstrap: docker
-From: pytorch/conda-cuda
+From: pytorch/pytorch:1.4-cuda10.1-cudnn7-devel
 %post
 
     # Update list of available packages, then upgrade them
