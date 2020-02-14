@@ -1,6 +1,5 @@
 Bootstrap: docker
-From: pytorch/pytorch
-
+From: pytorch/conda-cuda
 %post
 
     # Update list of available packages, then upgrade them
@@ -17,6 +16,7 @@ From: pytorch/pytorch
 	
 	apt-get install -y vim
 	apt-get install -y cmake
+	pip install --upgrade cmake
 	pip install pandas
 	pip install scipy
     
