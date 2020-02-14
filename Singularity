@@ -16,6 +16,7 @@ From: pytorch/pytorch
     apt-get install -y gnuplot-x11
 	
 	apt-get install -y vim
+	apt-get install -y cmake
 	pip install pandas
 	pip install scipy
     

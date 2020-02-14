@@ -1,5 +1,4 @@
 FROM pytorch/pytorch
-FROM pytorch/pytorch
 RUN # Update list of available packages, then upgrade them
 RUN apt-get update
 RUN DEBIAN_FRONTEND=noninteractive apt-get -y upgrade
@@ -11,6 +10,7 @@ RUN apt-get install -y unrar
 RUN apt-get install -y ffmpeg
 RUN apt-get install -y gnuplot-x11
 RUN apt-get install -y vim
+RUN apt-get install -y cmake
 RUN pip install pandas
 RUN pip install scipy
 RUN # Clean up
