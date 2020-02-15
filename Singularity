@@ -20,13 +20,6 @@ From: pytorch/pytorch:1.4-cuda10.1-cudnn7-devel
 	pip install pandas
 	pip install scipy
 	
-	cd ..
-	git clone https://github.com/gpufit/Gpufit.git Gpufit
-	mkdir Gpufit-build
-	cd Gpufit-build
-	cmake -DCMAKE_BUILD_TYPE=RELEASE ../Gpufit
-	make
-    
 	# Clean up
     apt-get -y autoremove
     rm -rvf /var/lib/apt/lists/*
