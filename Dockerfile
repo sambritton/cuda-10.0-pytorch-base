@@ -14,6 +14,7 @@ RUN apt-get install -y cmake
 RUN pip install --upgrade cmake
 RUN pip install pandas
 RUN pip install scipy
+RUN cd ..
 RUN git clone https://github.com/gpufit/Gpufit.git Gpufit
 RUN mkdir Gpufit-build
 RUN cd Gpufit-build
